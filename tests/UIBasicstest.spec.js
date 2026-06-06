@@ -101,7 +101,7 @@ test("Start Booking", async ({page, baseURL})=>{
     //step -5 Fill Booking Form
     await expect(page.locator('[id="ticket-count"]')).toHaveText("1")
 
-    //fill username
+    //fill the username
     await page.getByLabel('Full Name').fill("Sohit patel");
 
     await page.locator('[id="customer-email"]').fill('Sohitpatel12@gmail.com');
