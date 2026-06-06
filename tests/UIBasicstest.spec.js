@@ -123,7 +123,7 @@ test("Start Booking", async ({page, baseURL})=>{
     await page.getByRole('link', {name: 'View My Bookings'}).click();
     await expect(page).toHaveURL(`${baseURL}bookings`)
 
-    //getting All Booking Cards
+    //Getting All Booking Cards
     const bookingsCount = await page.locator('#booking-card');
     //Assert the first booking card is visible
     await expect(bookingsCount.first()).toBeVisible();
