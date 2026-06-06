@@ -125,7 +125,7 @@ test("Start Booking", async ({page, baseURL})=>{
 
     //Getting All Booking Cards
     const bookingsCount = await page.locator('#booking-card');
-    //Assert the first booking card is visible
+    //assert the first booking card is visible
     await expect(bookingsCount.first()).toBeVisible();
 
     //Filter booking cards for the one that contains an element with 
