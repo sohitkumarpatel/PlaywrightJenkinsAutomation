@@ -128,7 +128,7 @@ test("Start Booking", async ({page, baseURL})=>{
     //assert the first booking card is visible
     await expect(bookingsCount.first()).toBeVisible();
 
-    //filter booking cards for the one that contains an element with 
+    //Filter booking cards for the one that contains an element with 
     // class .booking-ref matching your bookingRef text
 
     const bookingRefID = page.locator('[id="booking-card"]').filter({has: page.locator('.booking-ref', {hasText: bookingRef})});
