@@ -1,9 +1,9 @@
 name: Playwright Tests
 on:
   push:
-    branches: [ main, master ]
+    branches: [yogeshRepo]
   pull_request:
-    branches: [ main, master ]
+    branches: [yogeshRepo]
 jobs:
   test:
     timeout-minutes: 60
